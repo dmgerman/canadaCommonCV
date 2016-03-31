@@ -3,7 +3,7 @@
 #+TAGS:
 #+SEQ_TODO: TODO STARTED DONE DEFERRED CANCELLED | WAITING DELEGATED APPT
 #+DRAWERS: HIDDEN STATE
-#+TITLE: Avoid the pain of the Common CCV
+#+TITLE: Avoid the pain of the Common CV
 #+CATEGORY: todo
 
 * License
