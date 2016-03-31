@@ -117,7 +117,33 @@ One line per field, and separate records with an empty line. Some HTML is allowe
 
 In the directory latexCrossRef you will find a way to create an Latex input file that you can use to reference your CCV using standard bibtex citations.
 
-*** How it works
+For example, these are some of my publications in the ccv:
+
+
+[[./j.png]]
+
+[[./c.png]]
+
+And this is how I refer to them in the proposal:
+
+#+BEGIN_SRC LaTeX
+...
+difficulties of tracing contributions in email and version control systems \cite{dmg2015contMining,dmg2014esemMailCommits}.
+We have empirically observed how distributions perform integration~\cite{dmg2014eseDebianInt}, and how software
+ecosystems manage their contributions and releases~\cite{dmg2015emseCommuContrib,dmg2013csmrR}
+We identified code reviews as a crucial tool for quality control in FOSS projects, investigated the
+manner in which they are performed via email, and found them to be as
+effective as those in commercial software~\cite{dmg2014tosemReviews,dmg2012ieeeReviews}. We have also explored the
+challenges of adopting and upgrading FOSS libraries~\cite{dmg2015icsmeEralib,dmg2014vissoftLib}.
+...
+#+END_SRC
+
+and this is how it appears:
+
+[[./la.png]]
+
+
+** How it works
 
 - The *input* file is your CCV (name it ccv-nserc.pdf) and the bibtex files created from your conference and journal sources (see above)
 - The important file to generate is contributionsInclude.tex
@@ -128,7 +154,7 @@ In the directory latexCrossRef you will find a way to create an Latex input file
    - journalsListBib.pdf
 
 
-*** Steps
+** Steps
 
   - make sure bib files you generate from your conf and journal files are up-to-date
   - download a recent version of the CCV (pdf) that matches those files
