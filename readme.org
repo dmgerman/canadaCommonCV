@@ -30,6 +30,15 @@ These scripts will allow you to avoid the CCV user interface and instead, concen
 - They run under Linux, but might work under OS X
 - They only handle cases I have seen (for example, it does not include all the countries in the world (why does the CCV care to verify them?)
 
+* Requirements
+
+- Linux or MacOS (untested)
+- pdftolatex (converts ccv in pdf to text, only needed if you want to create a bibtex bibliography that matches your ccv)
+- ruby
+- perl
+- latex
+- make
+
 * How to use
 
 In the directory generate, create two files:
