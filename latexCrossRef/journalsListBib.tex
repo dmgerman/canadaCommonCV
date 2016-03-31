@@ -1,0 +1,33 @@
+\documentclass[11pt,twocolumn]{article}
+
+\usepackage{times}
+\usepackage{fullpage}
+% \usepackage{isolatin1}
+% \usepackage{spacing}
+% \usepackage{nserc}
+%\usepackage[sorting=none]{biblatex}
+
+\begin{document}
+ \special{papersize=8.5in,11in}
+ \setlength{\pdfpageheight}{\paperheight}
+ \setlength{\pdfpagewidth}{\paperwidth}
+
+\section{Journals}
+
+\pagestyle{empty}
+
+\begin{enumerate}
+\input{journalsInclude}
+\end{enumerate}
+
+
+\bibliographystyle{unsrt}
+\bibliography{../generate/journals}
+
+\end{document}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 
+

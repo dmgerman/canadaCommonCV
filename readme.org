@@ -1,0 +1,58 @@
+#+STARTUP: showall
+#+STARTUP: lognotestate
+#+TAGS:
+#+SEQ_TODO: TODO STARTED DONE DEFERRED CANCELLED | WAITING DELEGATED APPT
+#+DRAWERS: HIDDEN STATE
+#+TITLE: Crossreference bibtex and CCV entries
+#+CATEGORY: todo
+
+** Create a bibliography for latex that can reference your CCV
+
+* Intro
+
+In the directory latexCrossRef you will find a way to create an Latex input file that you can use to reference your CCV using standard bibtex citations.
+
+** How it works
+
+- The *input* file is the CCV: ccv-nserc.pdf and the bib files created from your conference and journal sources
+- The important file to generate is contributionsInclude.tex
+- Simply follow the Makefile.
+- It requires the .bib files to be generated before (see symlinks for these)
+- Two files are created. 
+   - confsListBib.pdf
+   - journalsListBib.pdf
+
+
+** Steps
+
+  - make sure bib files you generate from your conf and journal files are up-to-date
+  - download a recent version of the CCV (pdf) that matches those files
+  - run make
+  - if no errors, verify the files: confsListBib.pdf and journalsListBib.pdf
+     - Verify the order of the entries. 
+     - Every row in the first section contains two numbers:
+     - The left hand side is the order in the CCV, the right hand number should match (it used a bibtex entry). 
+     - If they don't, something is wrong.
+  - result: two files
+    - confsListBib.bbl
+    - journalsListBib.bbl
+
+** How to use
+
+In your proposal use, instead of a bibliography. Use the field /dmgKey/ in the txt entries of your papers to refer to them in your proposal:
+
+#+BEGIN_SRC LaTeX
+...
+
+Recently, we empirically studied how GitHub is helping commercial software
+development~\cite{dmg2015icseGithub}. 
+
+...
+\input{contributionsInclude}
+
+#+END_SRC
+
+
+
+
+
