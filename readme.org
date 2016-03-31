@@ -3,16 +3,109 @@
 #+TAGS:
 #+SEQ_TODO: TODO STARTED DONE DEFERRED CANCELLED | WAITING DELEGATED APPT
 #+DRAWERS: HIDDEN STATE
-#+TITLE: Crossreference bibtex and CCV entries
+#+TITLE: Avoid the pain of the Common CCV
 #+CATEGORY: todo
 
-** Create a bibliography for latex that can reference your CCV
+* License
 
-* Intro
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software
+    Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+* Introduction
+
+If you are here, you are looking for a relief from the Common CCV user interface. How much do you think that interface has cost? Don't even think of knowing the
+answer. It might sink you into depression.
+
+These scripts will allow you to avoid the CCV user interface and instead, concentrate on just uploading XML files. 
+
+* Restrictions
+
+- These scripts are specifically designed to target Computer Science. 
+- It only handles conferences  and journals
+- They run under Linux, but might work under OS X
+- They only handle cases I have seen (for example, it does not include all the countries in the world (why does the CCV care to verify them?)
+
+* How to use
+
+In the directory generate, create two files:
+
+- confs.txt
+- journals.txt
+
+See the directory [[sample]] for examples of these files.
+
+Each file is a list of publications, in text file. The referenceID must be unique (somebody willing to write a patch to not-require it?)
+
+This is an example of a Journal:
+
+#+BEGIN_SRC 
+recordId=5f84ac4e98bc482dba87b56f001ea640
+Title=Management of community contributions
+Journal=Empirical Software Engineering
+Volume=20
+Issue=1
+PageRange=252-289
+PublishingStatus=Published
+Date=2015/2
+Publisher=Springer
+URL=http://link.springer.com/article/10.1007%2Fs10664-013-9284-6
+Refereed=Yes
+OpenAccess=No
+Authors=Nicolas Bettenburg, Ahmed E. Hassan, Bram Adams, Daniel M. German
+dmgKey=dmg2015nickESE
+#+END_SRC
+
+And this is an example of a conference:
+
+#+BEGIN_SRC 
+recordId=5f84ac4e98bc48200087b56f001ea640
+Type=Paper
+Title=Open Source-Style Collaborative Development Practices in Commercial Projects Using GitHub
+Conference=37th International Conference on Software Engineering (ICSE'15)
+Country=Italy
+City=Florence
+Date=2015/5
+DateConf=2015-05-16
+PublishedIn=Proc. 37th International Conference on Software Engineering, ICSE '15
+PublishingStatus=Published
+Refereed=Yes
+Authors=<b>E. Kalliamvakou*</b>, D. Damian, K. Blincoe, L. Singer, Daniel M. German
+Publisher=Springer
+Note=Acceptance rate 18% (84 out of 276 research papers).
+DOI=http://dx.doi.org/10.1109/ICSE.2015.74
+dmgKey=dmg2015icseGithub
+#+END_SRC
+
+One line per field, and separate records with an empty line. Some HTML is allowed in the CCV, but not everywhere.
+
+* Creating the XML and bibtex files
+
+- Once you have created your confs.txt and journals.txt, run make in that directory.
+- It should create four files: 
+  - journals.xml and confs.xml 
+  - journals.bib and confs.bib
+  
+* Uploading the XML files
+
+- Login to the CCV
+- I *strongly recommend you backup your current CCV by first downloading it in XML*. See Warranty above.
+- Go to the import tab.
+- Specify that you want to import XML. 
+- You will be asked for a file to upload. 
+- Upload
+- Now that it has verified it will ask you to indicate what section of the CCV you want to import it into.
+  - Select journals or conferences appropriately
+
+* Create a bibliography for latex that can reference your CCV
 
 In the directory latexCrossRef you will find a way to create an Latex input file that you can use to reference your CCV using standard bibtex citations.
 
-** How it works
+*** How it works
 
 - The *input* file is the CCV: ccv-nserc.pdf and the bib files created from your conference and journal sources
 - The important file to generate is contributionsInclude.tex
@@ -23,7 +116,7 @@ In the directory latexCrossRef you will find a way to create an Latex input file
    - journalsListBib.pdf
 
 
-** Steps
+*** Steps
 
   - make sure bib files you generate from your conf and journal files are up-to-date
   - download a recent version of the CCV (pdf) that matches those files
