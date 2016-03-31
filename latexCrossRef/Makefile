@@ -33,7 +33,7 @@ journalsListBib.pdf: journalsListBib.bbl journalsListBib.tex
 contributionsInclude.tex: ../includes/contribA.inc ../includes/contribB.inc ../includes/contribC.inc  journalsListBib.bbl confsListBib.bbl
 	tail --lines=+2 confsListBib.bbl > tmp.tmp && mv tmp.tmp tmp1.tmp
 	tail --lines=+2 journalsListBib.bbl > tmp.tmp && mv tmp.tmp tmp2.tmp
-	cat ../includes/contribA.inc tmp1.tmp contribB.inc tmp2.tmp ../includes/contribC.inc > contributionsInclude.tex
+	cat ../includes/contribA.inc tmp1.tmp ../includes/contribB.inc tmp2.tmp ../includes/contribC.inc > contributionsInclude.tex
 	rm -f tmp1.tmp tmp2.tmp
 
 dummy: ccvReferences.txt confsInclude.tex confsListBib.pdf journalsListBib.pdf confsListBib.bbl journalsListBib.bbl contributionsInclude.tex
