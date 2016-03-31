@@ -8,4 +8,6 @@ latexCrossRef/confsInclude.tex
 latexCrossRef/journalsInclude.tex
 latexCrossRef/paperReferences.txt
 generate
-
+latexCrossRef/ccvReferences.txt
+latexCrossRef/auto/
+latexCrossRef/contributionsInclude.tex
