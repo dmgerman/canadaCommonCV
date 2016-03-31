@@ -8,7 +8,7 @@
 
 * License
 
-This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software
+This software is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software
     Foundation, either version 3 of the License, or (at your option) any later version.
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
@@ -85,7 +85,7 @@ One line per field, and separate records with an empty line. Some HTML is allowe
 
 * Creating the XML and bibtex files
 
-- Once you have created your confs.txt and journals.txt, run make in that directory.
+- Once you have created your confs.txt and journals.txt, run make in that directory. Make sure there are no errors.
 - It should create four files: 
   - journals.xml and confs.xml 
   - journals.bib and confs.bib
@@ -98,8 +98,11 @@ One line per field, and separate records with an empty line. Some HTML is allowe
 - Specify that you want to import XML. 
 - You will be asked for a file to upload. 
 - Upload
+- At this point it will verify your XML. If it is all good, you will get no errors. If you get errors, well, they are very hard to debug (thank the ccv). I
+  recommend you split your bibliography in smaller chunks and test each.
 - Now that it has verified it will ask you to indicate what section of the CCV you want to import it into.
   - Select journals or conferences appropriately
+- Verify the data was read by browsing the current ccv.
 
 * Create a bibliography for latex that can reference your CCV
 
@@ -107,7 +110,7 @@ In the directory latexCrossRef you will find a way to create an Latex input file
 
 *** How it works
 
-- The *input* file is the CCV: ccv-nserc.pdf and the bib files created from your conference and journal sources
+- The *input* file is your CCV (name it ccv-nserc.pdf) and the bibtex files created from your conference and journal sources (see above)
 - The important file to generate is contributionsInclude.tex
 - Simply follow the Makefile.
 - It requires the .bib files to be generated before (see symlinks for these)
