@@ -170,7 +170,9 @@ and this is how it appears:
 
 ** How to use
 
-In your proposal use, instead of a bibliography. Use the field /dmgKey/ in the txt entries of your papers to refer to them in your proposal:
+In your proposal use, instead of a bibliography, include contributionsInclude.tex.  Use the field /dmgKey/ in the txt entries of your papers to refer to them in
+your proposal. See below: If you don't like the format, modify the files in includes. contributionsInclude.tex is created by concatenating the files in
+[[includes]].
 
 #+BEGIN_SRC LaTeX
 ...
