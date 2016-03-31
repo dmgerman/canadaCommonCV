@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<generic-cv:generic-cv xmlns:generic-cv="http://www.cihr-irsc.gc.ca/generic-cv/1.0.0" lang="en" dateTimeGenerated="2015-07-20 23:16:49">
+<section id="047ec63e32fe450e943cb678339e8102" label="Contributions">
+<section id="46e8f57e67db48b29d84dda77cf0ef51" label="Publications">
+<section id="9a34d6b273914f18b2273e8de7c48fd6" label="Journal Articles" recordId="5f84ac4e98bc482dba87b56f001ea640">
+<field id="f3fd4878d47c4e83aef6959620ba4870" label="Article Title">
+<value type="String">Management of community contributions</value>
+</field>
+<field id="5c04ea4dae464499807d0b40b4cad049" label="Journal">
+<value type="String">Empirical Software Engineering</value>
+</field>
+<field id="0a826c656ff34e579dfcbfb373771260" label="Volume">
+<value type="String">20</value>
+</field>
+<field id="cc1d9e14945b4e8496641dbe22b3448a" label="Issue">
+<value type="String">1</value>
+</field>
+<field id="00ba1799ece344dc8d0779a3f05a4df8" label="Page Range">
+<value type="String">252-289</value>
+</field>
+<field id="3b56e4362d6a495aa5d22a1de5914741" label="Publishing Status">
+<lov id="00000000000000000000000100001704">Published</lov>
+</field>
+<field id="6fafe258e19e49a7884428cb49d75424" label="Date">
+<value format="yyyy/MM" type="YearMonth">2015/2</value>
+</field>
+<field id="4ad593960aba4a21bf154fa8daf37f9f" label="Publisher">
+<value type="String">Springer</value>
+</field>
+<field id="4c3bc805ceaa42259f014514fc4905f8" label="Publication Location"/>
+<field id="1167905d079c4400ae7a4a76a203a445" label="Description / Contribution Value">
+<value type="Bilingual">
+</value>
+<bilingual>
+<french>
+</french>
+<english>
+</english>
+</bilingual>
+</field>
+<field id="478545acac5340c0a73b7e0d2a4bee06" label="URL">
+<value type="String">http://link.springer.com/article/10.1007%2Fs10664-013-9284-6</value>
+</field>
+<field id="2089ff1a86844b6c9a10fc63469f9a9d" label="Refereed?">
+<lov id="00000000000000000000000000000400">Yes</lov>
+</field>
+<field id="51b7eaff05444990af823b9d80924f5b" label="Open Access?">
+<lov id="00000000000000000000000000000401">No</lov>
+</field>
+<field id="b779cc6478bd4b09b516c6d55e938583" label="Synthesis?"/>
+<field id="289c8814fff141d89b12569d49aa2cb3" label="Contribution Role">
+<lov id="00000000000000000000000100002102">Co-Author</lov>
+</field>
+<field id="dc7922dfa04348a3a83c9afb5bbaa24a" label="Number of Contributors">
+<value type="Number">4</value>
+</field>
+<field id="bc3b428d99384b04bb749311bb804e1d" label="Authors">
+<value type="String">Nicolas Bettenburg,
+Ahmed E. Hassan,
+Bram Adams,
+Daniel M. German</value>
+</field>
+<field id="707a6e0ca58341a5a82fb923b2842530" label="Editors">
+<value type="String">
+</value>
+</field>
+</section>
+<section id="9a34d6b273914f18b2273e8de7c48fd6" label="Journal Articles" recordId="5f84ac4e98bc482dba87b56f002ea640">
+<field id="f3fd4878d47c4e83aef6959620ba4870" label="Article Title">
+<value type="String">The Impact of User Choice on Energy Consumption</value>
+</field>
+<field id="5c04ea4dae464499807d0b40b4cad049" label="Journal">
+<value type="String">IEEE Software</value>
+</field>
+<field id="0a826c656ff34e579dfcbfb373771260" label="Volume">
+<value type="String">31</value>
+</field>
+<field id="cc1d9e14945b4e8496641dbe22b3448a" label="Issue">
+<value type="String">3</value>
+</field>
+<field id="00ba1799ece344dc8d0779a3f05a4df8" label="Page Range">
+<value type="String">69-75</value>
+</field>
+<field id="3b56e4362d6a495aa5d22a1de5914741" label="Publishing Status">
+<lov id="00000000000000000000000100001704">Published</lov>
+</field>
+<field id="6fafe258e19e49a7884428cb49d75424" label="Date">
+<value format="yyyy/MM" type="YearMonth">2014/5</value>
+</field>
+<field id="4ad593960aba4a21bf154fa8daf37f9f" label="Publisher">
+<value type="String">IEEE</value>
+</field>
+<field id="4c3bc805ceaa42259f014514fc4905f8" label="Publication Location"/>
+<field id="1167905d079c4400ae7a4a76a203a445" label="Description / Contribution Value">
+<value type="Bilingual">
+</value>
+<bilingual>
+<french>
+</french>
+<english>
+</english>
+</bilingual>
+</field>
+<field id="478545acac5340c0a73b7e0d2a4bee06" label="URL">
+<value type="String">http://doi.ieeecomputersociety.org/10.1109/MS.2014.27</value>
+</field>
+<field id="2089ff1a86844b6c9a10fc63469f9a9d" label="Refereed?">
+<lov id="00000000000000000000000000000400">Yes</lov>
+</field>
+<field id="51b7eaff05444990af823b9d80924f5b" label="Open Access?">
+<lov id="00000000000000000000000000000401">No</lov>
+</field>
+<field id="b779cc6478bd4b09b516c6d55e938583" label="Synthesis?"/>
+<field id="289c8814fff141d89b12569d49aa2cb3" label="Contribution Role">
+<lov id="00000000000000000000000100002102">Co-Author</lov>
+</field>
+<field id="dc7922dfa04348a3a83c9afb5bbaa24a" label="Number of Contributors">
+<value type="Number">3</value>
+</field>
+<field id="bc3b428d99384b04bb749311bb804e1d" label="Authors">
+<value type="String"><b>Chenlei Zhang</b>,
+Abram Hindle,
+Daniel M. German</value>
+</field>
+<field id="707a6e0ca58341a5a82fb923b2842530" label="Editors">
+<value type="String">
+</value>
+</field>
+</section>
+</section>
+</section>
+</generic-cv:generic-cv>

@@ -1,0 +1,47 @@
+# input file for conferences
+#
+# Lines starting with # are comments
+# any field must have a unique record id: 32 hex
+# rest of the fields must be self descriptive
+# conference papers must be type "Paper"
+#
+# I guess some logic can be programmed into the scripts.
+#
+# See processConf.pl for a list of fields used
+#
+# any other field is simply output to the latex bib file
+#
+# Use and empty line to separate entries.
+#
+recordId=5f84ac4e98bc48200087b56f001ea640
+Type=Paper
+Title=Open Source-Style Collaborative Development Practices in Commercial Projects Using GitHub
+Conference=37th International Conference on Software Engineering (ICSE'15)
+Country=Italy
+City=Florence
+Date=2015/5
+DateConf=2015-05-16
+PublishedIn=Proc. 37th International Conference on Software Engineering, ICSE '15
+PublishingStatus=Published
+Refereed=Yes
+Authors=<b>E. Kalliamvakou*</b>, D. Damian, K. Blincoe, L. Singer, Daniel M. German
+Publisher=Springer
+Note=Acceptance rate 18% (84 out of 276 research papers).
+dmgKey=dmg2015icseGithub
+
+recordId=5f84ac4e98bc48200087b56f0023a600
+Type=Paper
+Title=License Usage and Changes: A Large-Scale Study of Java Projects on GitHub
+Conference=23rd International Conference of Program Comprehension (ICPC 2015)
+Country=Italy
+City=Florence
+Date=2015/06
+DateConf=2015-06-18
+PublishedIn=Proc. of 23rd Int. Conf. of Program Comprehension
+PublishingStatus=Published
+Refereed=Yes
+Authors=<b>Christopher Vendome</b>, <b>Mario Linarez-Vasquez</b>, Gabriele Bavota, M. di Penta, Daniel M. German, Denys Poshyvanyk
+Publisher=IEEE
+Note=Invited for Special Issue of <b>Best Papers</b> of ICPC. 
+dmgKey=dmg2015icpcLicGithub
+
