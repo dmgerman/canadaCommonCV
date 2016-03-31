@@ -23,6 +23,7 @@ URL=http://link.springer.com/article/10.1007%2Fs10664-013-9284-6
 Refereed=Yes
 OpenAccess=No
 Authors=Nicolas Bettenburg, Ahmed E. Hassan, Bram Adams, Daniel M. German
+dmgKey=dmg2015nickESE
 
 recordId=5f84ac4e98bc482dba87b56f002ea640
 Title=The Impact of User Choice on Energy Consumption

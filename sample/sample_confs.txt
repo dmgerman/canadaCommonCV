@@ -7,9 +7,11 @@
 #
 # I guess some logic can be programmed into the scripts.
 #
-# See processConf.pl for a list of fields used
+# See processConfs.pl for a list of fields output to xml
 #
-# any other field is simply output to the latex bib file
+# See txtToLatexConfs.pl for a list of fields output to file
+#
+# dmgKey is the key to the latex entry (required)
 #
 # Use and empty line to separate entries.
 #
@@ -27,6 +29,7 @@ Refereed=Yes
 Authors=<b>E. Kalliamvakou*</b>, D. Damian, K. Blincoe, L. Singer, Daniel M. German
 Publisher=Springer
 Note=Acceptance rate 18% (84 out of 276 research papers).
+DOI=http://dx.doi.org/10.1109/ICSE.2015.74
 dmgKey=dmg2015icseGithub
 
 recordId=5f84ac4e98bc48200087b56f0023a600

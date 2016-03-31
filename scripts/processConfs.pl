@@ -19,7 +19,7 @@ my %fields = (
               PageRange=>0,
               PublishingStatus=>1,
               Publisher=>1,
-              URL=>0,
+              DOI=>0,
               Refereed=>1,
               Authors=>1,
               Region => 0,
@@ -60,7 +60,7 @@ my %countries = (
 my %lov = Get_Lov();
 
 my $file = shift @ARGV;
-Process_File($file);
+Process_File_XML($file);
 exit(0);
 
 
@@ -121,17 +121,6 @@ sub Verify_Entry
 
     return %record;
 }
-
-sub Verify_Yes_No
-{
-    my ($val, $field) =@_;
-    if ($val eq "Yes" or $val eq "No") {
-        return;
-    }
-    die "Illegal yes/no answer in field [$field] value [$val]";
-            
-}
-
 
 sub Output_Entry
 {

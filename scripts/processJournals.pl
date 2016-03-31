@@ -28,7 +28,7 @@ my %lov = Get_Lov();
 
 my $file = shift @ARGV;
 
-Process_File($file);
+Process_File_XML($file);
 
 exit(0);
 

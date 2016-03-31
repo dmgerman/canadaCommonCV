@@ -52,7 +52,7 @@ sub Verify_Yes_No {
 }
 
 
-sub Process_File {
+sub Process_File_XML {
     
     my ($file) = @_;
     
@@ -85,5 +85,34 @@ END
     print STDERR "Created $count records\n";
     close IN;
 }
+
+sub Process_File_Latex {
+    
+    my ($file) = @_;
+    
+    die "Usage $0 <filename>\n\n" if (not -f $file);
+    
+    open(IN, $file) or die "Unable to open input file [$file]";
+    
+    print <<END;
+
+END
+
+    my $count = 0;
+    my %entry;
+    while (%entry = Read_Entry()) {
+        %entry = Verify_Entry(%entry);
+        Output_Entry(%entry);
+        $count++;
+    }
+    
+    print <<END;
+
+END
+    
+    print STDERR "Created $count records\n";
+    close IN;
+}
+
 
 1;
